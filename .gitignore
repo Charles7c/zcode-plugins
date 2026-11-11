@@ -1,0 +1,9 @@
+# 本地 IDE 配置
+.idea/
+.openidea/
+
+# WorkBuddy 本地缓存与记忆
+.workbuddy/
+
+# ZCode 本地配置
+.zcode/

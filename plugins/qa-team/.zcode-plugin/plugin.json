@@ -1,0 +1,13 @@
+{
+  "name": "qa-team",
+  "version": "1.0.0",
+  "description": "质量保障团队：主理人按测试战役编排测试架构师、接口测试工程师、UI 测试工程师；执行形态分单主循环/独立执行/并行执行/独立复核/专家模式，API/UI 可在数据与账号隔离下并行；从测试简报、风险策略、最小充分用例到真实执行与证据报告，覆盖接口回归、E2E、安全基线与发版前门禁；真实执行配成本闸（预算上限随派发下发、超限即停交部分验证），测试简报含 dev→qa 交接六项判定口径、轻量路径仅用户显式启用；test-brief 与 dev 的 project-brief 字段对齐，可与软件开发团队交接，也可独立使用。",
+  "description_i18n": {
+    "en": "QA Team: a lead orchestrates a test architect, API test engineer and UI test engineer through a test campaign; execution modes are single-loop / independent execution / parallel / independent review / expert, with API and UI parallel only when data and accounts are isolated; from test brief, risk-based strategy and minimum-sufficient cases to real execution and evidence-backed reports, covering API regression, E2E, security baseline and pre-release gates; real execution is guarded by a cost gate (budget cap dispatched to members, stop at cap with partial verification), the test brief carries six dev-to-qa decision fields, and the lightweight path is opt-in only; the test brief aligns with the dev team's project brief, and the plugin works standalone.",
+    "zh-CN": "质量保障团队：主理人按测试战役编排测试架构师、接口测试工程师、UI 测试工程师；执行形态分单主循环/独立执行/并行执行/独立复核/专家模式，API/UI 可在数据与账号隔离下并行；从测试简报、风险策略、最小充分用例到真实执行与证据报告，覆盖接口回归、E2E、安全基线与发版前门禁；真实执行配成本闸（预算上限随派发下发、超限即停交部分验证），测试简报含 dev→qa 交接六项判定口径、轻量路径仅用户显式启用；test-brief 与 dev 的 project-brief 字段对齐，可与软件开发团队交接，也可独立使用。"
+  },
+  "author": { "name": "Charles7c" },
+  "skills": "skills",
+  "agents": "agents",
+  "commands": "commands"
+}

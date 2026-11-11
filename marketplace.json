@@ -1,0 +1,35 @@
+{
+  "name": "zcode-plugins",
+  "plugins": [
+    {
+      "name": "software-team",
+      "source": "./plugins/software-team",
+      "version": "1.0.0",
+      "description": "软件开发团队：主理人按 SOP 编排产品经理、架构师、设计师、工程师、审查者、QA 六个子智能体协作交付；执行形态分单主循环/独立验证/并行执行/专家模式，新增 subagent 前过派发三问，主理人抽验关键证据；按需组队（单专家/小队/加强小队/完整队/审查队），项目简报替代全文转交，标准文件按需加载；小需求走快速模式，Bug 走 BugFix（复杂/模糊 Bug 先做条件诊断），既有 PR/变更整改走整改档；验证按真实运行/测试/静态检查/人工检查/模拟分级；交付形态按项目规则与用户要求确定；歧义指令按可逆性取解、外部交付文本与对话汇报分体、行为改动先取真值证据、并行派发受宿主并发额度约束；交付概览含套件终态、并发额度为 1 时降级串行、dev→qa 交接简报含六项判定口径；覆盖 squash 合并标题与正文、合并后多远端 SHA 核对与远程端点实测、时间盒收工、诊断后续派新实例、远端长任务先验状态再起新任务等协作纪律",
+      "displayName": "Software Development Team",
+      "displayName_i18n": {
+        "zh-CN": "软件开发团队"
+      },
+      "description_i18n": {
+        "zh-CN": "软件开发团队：主理人按 SOP 编排产品经理、架构师、设计师、工程师、审查者、QA 六个子智能体协作交付；执行形态分单主循环/独立验证/并行执行/专家模式，新增 subagent 前过派发三问，主理人抽验关键证据；按需组队（单专家/小队/加强小队/完整队/审查队），项目简报替代全文转交，标准文件按需加载；小需求走快速模式，Bug 走 BugFix（复杂/模糊 Bug 先做条件诊断），既有 PR/变更整改走整改档；验证按真实运行/测试/静态检查/人工检查/模拟分级；交付形态按项目规则与用户要求确定；歧义指令按可逆性取解、外部交付文本与对话汇报分体、行为改动先取真值证据、并行派发受宿主并发额度约束；交付概览含套件终态、并发额度为 1 时降级串行、dev→qa 交接简报含六项判定口径；覆盖 squash 合并标题与正文、合并后多远端 SHA 核对与远程端点实测、时间盒收工、诊断后续派新实例、远端长任务先验状态再起新任务等协作纪律",
+        "en": "Software Development Team: a lead orchestrates PM, Architect, Designer, Engineer, Reviewer and QA subagents through a gated SOP; execution modes are single-loop / independent verification / parallel / expert, with a three-question dispatch check and lead spot-checks of evidence; right-sized teams (single expert / small squad / reinforced squad / full team / review team), project brief instead of full-text handoff, on-demand standard files; fast path for small requests, bugfix path with conditional root-cause diagnosis, remediation path for existing PRs/changes, verification classified as real-run / test / static / manual / simulated, and delivery form determined by project rules and user requirements; ambiguous instructions resolve to the reversible reading, external delivery text is kept separate from conversational reporting, behavior changes require independent evidence, and parallel dispatch respects the host concurrency quota; the delivery summary records test-suite terminal state, serial fallback when the host concurrency quota is 1, and the dev-to-qa handoff brief carries six decision fields; enforces collaboration disciplines: a QA failure cannot be cleared by a reviewer pass, routing values and dispatched standard clauses are quoted verbatim, incremental dispatches carry standard files and rework packets, implementer-run self-check tools do not replace independent verification, failed dispatches are not resent verbatim, squash merges carry an explicit subject/body, post-merge multi-remote SHA verification runs with remote endpoint smoke tests, timeboxed wrap-ups leave no unfulfilled CI promises, follow-up dispatches after diagnosis use a fresh instance, and remote task state is checked before starting an equivalent long task"
+      },
+      "category": "developer-tools"
+    },
+    {
+      "name": "qa-team",
+      "source": "./plugins/qa-team",
+      "version": "1.0.0",
+      "description": "质量保障团队：主理人按测试战役编排测试架构师、接口测试工程师、UI 测试工程师；执行形态分单主循环/独立执行/并行执行/独立复核/专家模式，API/UI 可在数据与账号隔离下并行；从测试简报、风险策略、最小充分用例到真实执行与证据报告，覆盖接口回归、E2E、安全基线与发版前门禁；真实执行配成本闸（预算上限随派发下发、超限即停交部分验证），测试简报含 dev→qa 交接六项判定口径、轻量路径仅用户显式启用；test-brief 与 dev 的 project-brief 字段对齐，可与软件开发团队交接，也可独立使用。",
+      "displayName": "QA Team",
+      "displayName_i18n": {
+        "zh-CN": "质量保障团队"
+      },
+      "description_i18n": {
+        "zh-CN": "质量保障团队：主理人按测试战役编排测试架构师、接口测试工程师、UI 测试工程师；执行形态分单主循环/独立执行/并行执行/独立复核/专家模式，API/UI 可在数据与账号隔离下并行；从测试简报、风险策略、最小充分用例到真实执行与证据报告，覆盖接口回归、E2E、安全基线与发版前门禁；真实执行配成本闸（预算上限随派发下发、超限即停交部分验证），测试简报含 dev→qa 交接六项判定口径、轻量路径仅用户显式启用；test-brief 与 dev 的 project-brief 字段对齐，可与软件开发团队交接，也可独立使用。",
+        "en": "QA Team: a lead orchestrates a test architect, API test engineer and UI test engineer through a test campaign; execution modes are single-loop / independent execution / parallel / independent review / expert, with API and UI parallel only when data and accounts are isolated; from test brief, risk-based strategy and minimum-sufficient cases to real execution and evidence-backed reports, covering API regression, E2E, security baseline and pre-release gates; real execution is guarded by a cost gate (budget cap dispatched to members, stop at cap with partial verification), the test brief carries six dev-to-qa decision fields, and the lightweight path is opt-in only; the test brief aligns with the dev team's project brief, and the plugin works standalone."
+      },
+      "category": "developer-tools"
+    }
+  ]
+}
