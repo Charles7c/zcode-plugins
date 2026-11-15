@@ -4,15 +4,15 @@
     {
       "name": "software-team",
       "source": "./plugins/software-team",
-      "version": "1.1.0",
-      "description": "软件开发团队：按风险编排需求、设计、实现、审查与 QA；提供快速模式、BugFix、整改、标准开发和上线前审查。PR 粒度与模板遵循目标仓库规范；依赖/API 升级时评估上游能力与下游简化机会。",
+      "version": "1.1.1",
+      "description": "软件开发团队：按风险编排需求、设计、实现、审查与 QA；提供快速模式、BugFix、整改、标准开发和上线前审查。PR 粒度与模板遵循目标仓库规范；依赖/API 升级时评估上游能力与下游简化机会；含供应商故障止损、连续派发失败直写降级与增量复核最小证据集。",
       "displayName": "Software Development Team",
       "displayName_i18n": {
         "zh-CN": "软件开发团队"
       },
       "description_i18n": {
-        "zh-CN": "软件开发团队：按风险编排需求、设计、实现、审查与 QA；提供快速模式、BugFix、整改、标准开发和上线前审查。PR 粒度与模板遵循目标仓库规范；依赖/API 升级时评估上游能力与下游简化机会。",
-        "en": "Software team orchestrated by risk-based workflows for planning, implementation, review and QA. Supports fast delivery, bug fixes, remediation, standard development and release review. PR scope and templates follow repository conventions; dependency/API upgrades assess upstream capabilities and downstream simplification."
+        "zh-CN": "软件开发团队：按风险编排需求、设计、实现、审查与 QA；提供快速模式、BugFix、整改、标准开发和上线前审查。PR 粒度与模板遵循目标仓库规范；依赖/API 升级时评估上游能力与下游简化机会；含供应商故障止损、连续派发失败直写降级与增量复核最小证据集。",
+        "en": "Software team orchestrated by risk-based workflows for planning, implementation, review and QA. Supports fast delivery, bug fixes, remediation, standard development and release review. PR scope and templates follow repository conventions; dependency/API upgrades assess upstream capabilities and downstream simplification. Adds provider-failure stop-loss, a direct-write fallback after repeated dispatch failures, and a minimum evidence set for incremental QA review."
       },
       "category": "developer-tools"
     },
